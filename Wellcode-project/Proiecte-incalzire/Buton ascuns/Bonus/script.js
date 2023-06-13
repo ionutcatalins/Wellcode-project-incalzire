@@ -1,16 +1,18 @@
-let numberButton = 0;
+
 
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
 }
 
 function button() {
-   let value = document.getElementById("btncount").value
-   let buttonWin = getRandomInt(value)
-   console.log(buttonWin)
-   for (let i = 0; i < value; ++i) {
+    document.getElementById('result').innerHTML = " "
+    let numberButton = 0;
+    let value = document.getElementById("btncount").value
+    let buttonWin = getRandomInt(value)
+    console.log(buttonWin)
+    for (let i = 0; i < value; ++i) {
     let choose = 'loser()'
-        if (numberButton == buttonWin) {
+        if (numberButton == buttonWin - 1) {
             choose = 'win()'
         }  
     ++numberButton
@@ -20,14 +22,12 @@ function button() {
         newBtn.setAttribute("onclick", choose)
         newBtn.innerText="Buton" + (numberButton)
         document.querySelector('#result').appendChild(newBtn)
-    }
-    
+    }    
 }
-
 
 function win() {
-    console.log('Castigator')
+    document.getElementById("text").innerHTML = 'Castigator'
 }
 function loser() {
-    console.log('Necastigator')
+    document.getElementById("text").innerHTML = 'Necastigator'
 }

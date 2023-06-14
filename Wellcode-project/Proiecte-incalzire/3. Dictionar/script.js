@@ -1,9 +1,8 @@
 const words = new Array(1000);
 let numberWords = 0
 
-function button() {
-    words[numberWords] = document.getElementById("in").value;   
-    console.log(words[numberWords])
+function buttonSave() {
+    words[numberWords] = document.getElementById("in").value;
     ++numberWords
 }
 function searchWords() {

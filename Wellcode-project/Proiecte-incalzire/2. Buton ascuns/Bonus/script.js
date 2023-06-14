@@ -15,12 +15,12 @@ function button() {
         if (numberButton == buttonWin - 1) {
             choose = 'win()'
         }  
-    ++numberButton
+		++numberButton
         let newBtn = document.createElement(type='button');
         newBtn.id = numberButton;
          
         newBtn.setAttribute("onclick", choose)
-        newBtn.innerText="Buton" + (numberButton)
+        newBtn.innerText= "Buton" + (numberButton)
         document.querySelector('#result').appendChild(newBtn)
     }    
 }

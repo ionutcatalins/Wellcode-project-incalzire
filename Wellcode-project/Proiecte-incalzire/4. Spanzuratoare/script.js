@@ -48,12 +48,10 @@ function letter() { // check every letter and letter completion
         }
         
         if (counterLetter == 0) {
-            alert("Ati castigat: " + wordReceived)
-            window.location.reload();
+            document.getElementById("endGame").innerHTML = "Felicitari ai castigat!"
         }
         if (lifee == 0) {
-            alert("Ati pierdut cuvantul este: " + wordReceived)
-            window.location.reload();
+            document.getElementById("endGame").innerHTML = "Ai pierdut."
         }
         document.getElementById("life").innerHTML = "Numar vieti: " + lifee;
     }

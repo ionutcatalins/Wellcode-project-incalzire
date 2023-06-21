@@ -45,8 +45,7 @@ function letter() { // check every letter and letter completion
         }  
         if (check == 0) {
             --lifee;
-        }
-        
+        }        
         if (counterLetter == 0) {
             document.getElementById("endGame").innerHTML = "Felicitari ai castigat!"
         }
